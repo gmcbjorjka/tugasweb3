@@ -1,109 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
 
-        header {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
 
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-        }
+    <!-- Favicon Web -->
+    <link rel="shortcut icon" href="./img/png/me.png" type="image/x-icon" />
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-        nav li {
-            margin: 0 10px;
-        }
+    <!-- Meta Tag Open Graph -->
+    <meta property="og:title" content="Portofolio" />
+    <meta
+      property="og:description"
+    />
+    <meta
+      property="og:image"
+      itemprop="image"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:width" content="500" />
+  </head>
+  <body>
+    <!-- Loading Screen Start -->
 
-        nav a {
-            text-decoration: none;
-            color: #fff;
-        }
+    <div class="loading-container">
+      <div class="loading-screen"></div>
+    </div>
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
+    <!-- Loading Screen End -->
 
-        .profile {
-            flex: 1;
-            padding: 20px;
-            background-color: #444;
-            color: #fff;
-        }
+    <!-- Header Start -->
 
-        .profile img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .description {
-            flex: 2;
-            padding: 20px;
-        }
-
-        footer {
-            clear: both;
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-    </style>
-</head>
-<body>
     <header>
-        <h1>Portofolio Saya</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Kontak</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="profile">
-            <img src="Gambar WhatsApp 2023-10-23 pukul 20.10.03_c0f7790c.jpg" alt="Profil Saya">
-        </div>
-        <div class="description">
-            <h1>Profil Saya</h1>
-            <p>Halo, saya Mohamad Teguh Setiawan. Saya adalah seorang mahasiswa dalam program studi teknik informatika di politeknik harapan bersama..</p>
-            <p>Riwayat Pendidikan saya. SDN Gumayun 01,SMP Negeri 1 Dukuhwaru, SMK Negeri Adiwerna jurusan Teknik Kendaraan Ringan</p>
-            <p>Sertifikasi keahlian mekanika dasar dari LSP BNSP. Keahlian mekanika dasar Dari Politeknik Keselamatan Transpotasi Jalan Tegal</p>
-        </div>
-    </div>
-    <div class="description">
-        <h1>Rangkuman Redhat</h1>
-             <p>Red Hat adalah perusahaan multinasional yang bergerak di bidang perangkat lunak sumber terbuka. Mereka membangun dan mendukung produk sumber terbuka yang berasal dari proyek sumber terbuka, yang mengarah pada kesuksesan pelanggan. Red Hat memiliki kantor di Jakarta, Indonesia, yang terletak di Revenue Tower, Lantai 21 No. 119 Sudirman Central Business District (District 8) Jl. Jenderal Sudirman No. 52-53 Senayan, Kebayoran Baru Jakarta 12190</p>
+      <!-- Navigation Bar Start -->
 
-            <p>Komerce adalah perusahaan teknologi yang membantu UMKM di Indonesia untuk memasarkan produk mereka secara online. Komerce menyediakan layanan end-to-end e-commerce, termasuk talent support terlatih, platform pengiriman pesanan, dan manajemen pergudangan terbaik. Dengan Komerce, pebisnis online dan UMKM dapat meningkatkan performa penjualan mereka di e-commerce dan mengoptimalkan bisnis mereka secara efektif.</p>
-    </div>
-    <footer>
-      <p>pengalaman kerja : PT. Astra Honda Motor 1 tahun</p>
-      <p>Hobi : sepak bola, joging, berenang</p>
-      <p>drama favorit : DOTS, vincenzo, Reaply 1989, dsb.</p>
-    </footer>
-</body>
+      <nav>
+        <a href="#" class="title">
+          <h1>M.T. <span>Setiawan</span></h1>
+        </a>
+        <div class="nav-list">
+          <i id="dark-toggle" class="bx bxs-sun"></i>
+          <ul id="dropdown">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Portofolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <!-- Navigation Bar End -->
+    </header>
+
+    <!-- Header End -->
+
+    <!-- Main Start -->
+
+    <main>
+      <!-- Hero Section Start -->
+
+      <section id="hero">
+        <article>
+          <h1>
+            <span>Mohamad Teguh Setiawan</span>
+          </h1>
+          <p>
+            Halo! Saya Mohamad Teguh Setiawan, seorang pengembang perangkat lunak dengan keahlian dalam berbagai bahasa pemrograman dan pemrosesan bahasa alami. Dengan pengalaman dalam memecahkan masalah teknis, menyusun dokumentasi teknis, dan mendukung pengembangan aplikasi berbasis NLP, saya siap membantu Anda mencapai tujuan teknis Anda. Ayo berdiskusi dan lihat bagaimana saya dapat mendukung proyek Anda!.
+          </p>
+          <a href="#about" class="btn_download start">
+            <i class="bx bxs-right-arrow"></i> next
+          </a>
+        </article>
+        <aside>
+          <img
+            src="./img/png/me1.png"
+            alt="hero-image"
+            id="hero-image"
+            loading="lazy"
+          />
+        </aside>
+      </section>
+
+      <!-- Hero Section End -->
+
+      <!-- About Section Start -->
+
+      <section id="about">
+        <article>
+          <h1>About Me</h1>
+          <p>
+            Dalam perjalanan studi dan karier saya, saya telah mengembangkan kemampuan dalam memahami dan menerapkan berbagai bahasa pemrograman, khususnya di bidang kecerdasan buatan. Pengalaman saya melibatkan berbagai proyek AI, termasuk pengembangan model pemrosesan bahasa alami dan sistem cerdas. Saya menikmati tantangan untuk memecahkan masalah teknis dan berkontribusi pada perkembangan teknologi. Di luar dunia coding, saya memiliki minat dalam eksplorasi konsep-konsep baru dan terus mengasah keterampilan saya. Tujuan saya adalah terus berkembang sebagai seorang profesional AI, berkontribusi pada inovasi, dan terus belajar agar dapat memberikan dampak positif dalam dunia teknologi. Mari kita berkolaborasi untuk mencapai proyek-proyek AI yang menarik dan bermanfaat!
+          </p>
+          <a href="#features" class="btn">
+            <i class="bx bxs-right-arrow"></i> next
+          </a>
+        </article>
+        <aside>
+          <img
+            src="./img/png/me2.png"
+            alt="about-hero"
+            id="about-hero"
+            loading="lazy"
+          />
+        </aside>
+      </section>
+
+      <!-- About Section End -->
+
+      <!-- Hero Section Start -->
+
+      <section id="features">
+        <article>
+          <h1>Portofolio</h1>
+        
+        </article>
+        <aside>
+          <div class="box-features">
+            <h1>Sistem Pendeteksi Emosi dalam Teks</h1>
+            <p>
+              Proyek ini bertujuan untuk mengembangkan sistem kecerdasan buatan yang mampu mendeteksi emosi dalam teks.
+            </p>
+          </div>
+          <div class="box-features">
+            <h1>Sistem Rekomendasi Film Berbasis Kecerdasan Buatan</h1>
+            <p>
+              Mengembangkan sistem AI untuk memahami preferensi pengguna dan memberikan rekomendasi film yang sesuai. 
+            </p>
+          </div>
+          <div class="box-features">
+            <h1>Sistem Pendeteksi Anomali dalam Jaringan Komputer</h1>
+            <p>
+              Mengembangkan sistem kecerdasan buatan yang dapat mendeteksi anomali dalam jaringan komputer. 
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Hero Section End -->
+
+      <!-- About Section Start -->
+
+      <section id="about">
+        <article>
+          <h1>Seminar</h1>
+          <p>
+            Red Hat adalah Perusahaan opensource yang bergerak di bidang software yaitu sistem operasi linux yang mengacu ke dalsm bidang edukasi yang sekarang ini bernama RHEL (Red Had Enterprise Linux) Red Had mempunyai salah satu program yaitu program CSR (dhsvsjsi) .CSR adalah kegiatan yang memfokuskan untuk para community dibidang akademisi untuk menjembatani antara industri, akademik, dan institusi. Red had mempunyai software yang sekarang dinamakan Red Had Academy.
+          </p>
+          <p>
+            Red Hat Academy adalah sebuah platform dimana teman-teman bisa mempelajari materi didalam Red Had secara gratis atau juga mirip dengan software E-learning seperti Sys admin, automation and anible, openshift, pemrograman java, pyhton, Dll.
+          </p>
+        </article>
+        <aside>
+          <img
+            src="./img/png/IMG_1164.JPG"
+            alt="about-hero"
+            id="about-hero"
+            loading="lazy"
+          />
+        </aside>
+      </section>
+
+      <!-- About Section End -->
+
+      <!-- Hero Section Start -->
+
+      <section id="contact">
+        <article>
+          <h1>Contact Us</h1>
+          <h3>Contact us for more information</h3>
+        </article>
+        <aside>
+          <form id="form-contact">
+            <div class="input-field">
+              <label for="name">Nama</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Masukan nama"
+              />
+            </div>
+            <div class="input-field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Masukan Email"
+              />
+            </div>
+            <div class="input-field">
+              <label for="message">Pesan</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Tulis Pesan. . . "
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </aside>
+      </section>
+
+      <!-- Hero Section End -->
+    </main>
+
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+
+    <footer>&copy; 2023 All Rights Reserved by <span>Setiawan</span></footer>
+
+    <!-- Footer End -->
+
+    <!-- Button back to top -->
+    <div class="button-backtop"><i class="bx bx-arrow-to-top"></i></div>
+
+    <!-- JavaScript External File -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
